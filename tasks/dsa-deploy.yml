@@ -1,0 +1,18 @@
+---
+
+- name: OS description
+  debug:
+    msg: "{{ ansible_distribution }}-{{ ansible_distribution_major_version|truncate(2) }}"
+
+- name: Download the Deep Security agent
+  get_url:
+    url: "https://{{ dsm_agent_download_hostname }}:{{ dsm_agent_download_port }}/{{ agent_relative_path }}/{{ ansible_architecture }}/"
+    dest: "{{ agent_local_path }}"
+    validate_certs: no
+
+- name: Install the Deep Security agent
+  yum:
+    name: "{{ agent_local_path }}"
+    state: installed
+    update_cache: true
+  creates:

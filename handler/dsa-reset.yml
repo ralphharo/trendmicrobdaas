@@ -1,0 +1,4 @@
+---
+
+- name: Reset the Deep Security agent
+  command: /opt/ds_agent/dsa_control -r

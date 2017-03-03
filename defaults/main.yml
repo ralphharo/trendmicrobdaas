@@ -1,0 +1,10 @@
+---
+
+#dsa-deploy
+dsm_agent_download_hostname: dsm.stable.orionsaas
+dsm_agent_download_port: 443
+dsa_activation_hostname: dsm.stable.orionsaas
+dsa_activation_port: 4120
+tenant_id:
+tenant_password:
+default_policy_id: 19

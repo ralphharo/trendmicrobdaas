@@ -1,0 +1,4 @@
+---
+- block:
+  - include: dsa-deploy.yml
+  - include: dsa-activate.yml

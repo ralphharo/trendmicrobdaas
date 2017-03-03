@@ -1,0 +1,4 @@
+---
+
+- name: Scan the node for changes to it's integrity
+  command: /opt/ds_agent/dsa_control --scanForChanges

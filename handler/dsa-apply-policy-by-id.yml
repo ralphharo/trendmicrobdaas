@@ -1,0 +1,4 @@
+---
+
+- name: Apply a policy to the node
+  command: /opt/ds_agent/dsa_control -m "policyid:{{ policy_id }}"
